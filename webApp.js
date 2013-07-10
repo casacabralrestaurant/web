@@ -4,7 +4,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(request, response) {
-    response.send('Welcome to Casa Cabral Restaurant. We are underconstruction and will be live soon!');
+    response.sendfile('public/index.html');
 });
 
 app.use(function(error, request, response, next) {
